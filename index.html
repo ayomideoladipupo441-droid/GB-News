@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NewsHub Writer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">N</div>
+            <span>NewsHub</span>
+        </div>
+
+        <div class="writer-profile">
+            <div class="profile-avatar">AY</div>
+
+            <div>
+                <strong>Ayomide</strong>
+                <small>Writer</small>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <a href="#" class="nav-item active" data-page="dashboard">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="articles">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>My Articles</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="create">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Write Article</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="drafts">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Drafts</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="published">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Published</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <button class="menu-button" id="menuButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="topbar-title">
+                <h2 id="pageTitle">Dashboard</h2>
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="icon-button">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="top-profile">
+                    <div class="small-avatar">AY</div>
+                    <span>Ayomide</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section class="page active-page" id="dashboard">
+
+            <div class="welcome">
+
+                <div>
+                    <p class="eyebrow">WRITER DASHBOARD</p>
+                    <h1>Welcome back, Ayomide</h1>
+                    <p>
+                        Write, manage and submit your latest news stories.
+                    </p>
+                </div>
+
+                <button class="primary-button" id="startWriting">
+                    <i class="fa-solid fa-pen"></i>
+                    Write New Article
+                </button>
+
+            </div>
+
+            <div class="statistics">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+
+                    <div>
+                        <span>Total Articles</span>
+                        <strong>24</strong>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <span>Pending Review</span>
+                        <strong>5</strong>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+                        <span>Published</span>
+                        <strong>18</strong>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+
+                    <div>
+                        <span>Total Views</span>
+                        <strong>125K</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="dashboard-grid">
+
+                <div class="content-card">
+
+                    <div class="card-header">
+                        <div>
+                            <h3>Recent Articles</h3>
+                            <p>Your latest submitted stories</p>
+                        </div>
+
+                        <button class="text-button" data-page="articles">
+                            View All
+                        </button>
+                    </div>
+
+                    <div class="article-list">
+
+                        <div class="article-row">
+
+                            <div class="article-thumbnail">
+                                <i class="fa-solid fa-image"></i>
+                            </div>
+
+                            <div class="article-information">
+                                <strong>
+                                    Nigeria's Economy and the Road Ahead
+                                </strong>
+
+                                <small>
+                                    August 18, 2026 • Politics
+                                </small>
+                            </div>
+
+                            <span class="status published-status">
+                                Published
+                            </span>
+
+                        </div>
+
+                        <div class="article-row">
+
+                            <div class="article-thumbnail">
+                                <i class="fa-solid fa-image"></i>
+                            </div>
+
+                            <div class="article-information">
+                                <strong>
+                                    FG Announces New Development Programme
+                                </strong>
+
+                                <small>
+                                    August 17, 2026 • Business
+                                </small>
+                            </div>
+
+                            <span class="status review-status">
+                                Under Review
+                            </span>
+
+                        </div>
+
+                        <div class="article-row">
+
+                            <div class="article-thumbnail">
+                                <i class="fa-solid fa-image"></i>
+                            </div>
+
+                            <div class="article-information">
+                                <strong>
+                                    Community Leaders Call for More Action
+                                </strong>
+
+                                <small>
+                                    August 16, 2026 • News
+                                </small>
+                            </div>
+
+                            <span class="status draft-status">
+                                Draft
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="content-card quick-card">
+
+                    <h3>Quick Actions</h3>
+
+                    <button class="quick-action" data-page="create">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>
+                            <strong>New Article</strong>
+                            <small>Start writing a story</small>
+                        </span>
+                    </button>
+
+                    <button class="quick-action" data-page="drafts">
+                        <i class="fa-solid fa-file"></i>
+                        <span>
+                            <strong>Continue Draft</strong>
+                            <small>Continue an unfinished article</small>
+                        </span>
+                    </button>
+
+                    <button class="quick-action" data-page="published">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>
+                            <strong>View Performance</strong>
+                            <small>Check your published stories</small>
+                        </span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= ARTICLES ================= -->
+
+        <section class="page" id="articles">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">CONTENT</p>
+                    <h1>My Articles</h1>
+                    <p>Manage all your submitted articles.</p>
+                </div>
+
+                <button class="primary-button" data-page="create">
+                    <i class="fa-solid fa-plus"></i>
+                    New Article
+                </button>
+
+            </div>
+
+            <div class="content-card">
+
+                <div class="table-controls">
+
+                    <input
+                        type="search"
+                        id="articleSearch"
+                        placeholder="Search articles..."
+                    >
+
+                    <select>
+                        <option>All Articles</option>
+                        <option>Published</option>
+                        <option>Under Review</option>
+                        <option>Draft</option>
+                    </select>
+
+                </div>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Article</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Views</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="articlesTable">
+
+                            <tr>
+                                <td>
+                                    <strong>
+                                        Nigeria's Economy and the Road Ahead
+                                    </strong>
+                                </td>
+
+                                <td>Politics</td>
+                                <td>Aug 18, 2026</td>
+
+                                <td>
+                                    <span class="status published-status">
+                                        Published
+                                    </span>
+                                </td>
+
+                                <td>12,430</td>
+
+                                <td>
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>
+                                        FG Announces New Development Programme
+                                    </strong>
+                                </td>
+
+                                <td>Business</td>
+                                <td>Aug 17, 2026</td>
+
+                                <td>
+                                    <span class="status review-status">
+                                        Under Review
+                                    </span>
+                                </td>
+
+                                <td>—</td>
+
+                                <td>
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CREATE ARTICLE ================= -->
+
+        <section class="page" id="create">
+
+            <div class="editor-header">
+
+                <div>
+                    <p class="eyebrow">ARTICLE EDITOR</p>
+                    <h1>Create Article</h1>
+                </div>
+
+                <div class="editor-actions">
+
+                    <button class="secondary-button" id="previewButton">
+                        <i class="fa-regular fa-eye"></i>
+                        Preview
+                    </button>
+
+                    <button class="secondary-button" id="saveDraft">
+                        <i class="fa-regular fa-floppy-disk"></i>
+                        Save Draft
+                    </button>
+
+                    <button class="primary-button" id="submitArticle">
+                        Submit for Review
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="editor-layout">
+
+                <!-- ARTICLE AREA -->
+
+                <div class="editor-main">
+
+                    <div class="editor-card">
+
+                        <input
+                            type="text"
+                            id="articleTitle"
+                            class="article-title-input"
+                            placeholder="Enter article headline..."
+                        >
+
+                        <!-- COVER IMAGE -->
+
+                        <div class="cover-upload">
+
+                            <input
+                                type="file"
+                                id="coverImage"
+                                accept="image/*"
+                                hidden
+                            >
+
+                            <label for="coverImage">
+
+                                <div class="upload-icon">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                </div>
+
+                                <strong>Upload Cover Image</strong>
+
+                                <span>
+                                    Recommended: 1200 × 675px
+                                </span>
+
+                            </label>
+
+                            <img
+                                id="coverPreview"
+                                class="cover-preview"
+                                alt="Cover preview"
+                            >
+
+                        </div>
+
+                        <!-- EDITOR TOOLBAR -->
+
+                        <div class="editor-toolbar">
+
+                            <div class="toolbar-group">
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="undo"
+                                    title="Undo"
+                                >
+                                    <i class="fa-solid fa-rotate-left"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="redo"
+                                    title="Redo"
+                                >
+                                    <i class="fa-solid fa-rotate-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="toolbar-divider"></div>
+
+                            <div class="toolbar-group">
+
+                                <select
+                                    id="formatBlock"
+                                    class="format-select"
+                                    title="Heading"
+                                >
+                                    <option value="p">Paragraph</option>
+                                    <option value="h1">Heading 1</option>
+                                    <option value="h2">Heading 2</option>
+                                    <option value="h3">Heading 3</option>
+                                    <option value="blockquote">
+                                        Quote
+                                    </option>
+                                </select>
+
+                            </div>
+
+                            <div class="toolbar-divider"></div>
+
+                            <div class="toolbar-group">
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="bold"
+                                    title="Bold"
+                                >
+                                    <i class="fa-solid fa-bold"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="italic"
+                                    title="Italic"
+                                >
+                                    <i class="fa-solid fa-italic"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="underline"
+                                    title="Underline"
+                                >
+                                    <i class="fa-solid fa-underline"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="strikeThrough"
+                                    title="Strikethrough"
+                                >
+                                    <i class="fa-solid fa-strikethrough"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="toolbar-divider"></div>
+
+                            <div class="toolbar-group">
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="insertUnorderedList"
+                                    title="Bullet List"
+                                >
+                                    <i class="fa-solid fa-list-ul"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="insertOrderedList"
+                                    title="Numbered List"
+                                >
+                                    <i class="fa-solid fa-list-ol"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="toolbar-divider"></div>
+
+                            <div class="toolbar-group">
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="justifyLeft"
+                                    title="Align Left"
+                                >
+                                    <i class="fa-solid fa-align-left"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="justifyCenter"
+                                    title="Center"
+                                >
+                                    <i class="fa-solid fa-align-center"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    data-command="justifyRight"
+                                    title="Align Right"
+                                >
+                                    <i class="fa-solid fa-align-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="toolbar-divider"></div>
+
+                            <div class="toolbar-group">
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    id="linkButton"
+                                    title="Insert Link"
+                                >
+                                    <i class="fa-solid fa-link"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    id="unlinkButton"
+                                    title="Remove Link"
+                                >
+                                    <i class="fa-solid fa-link-slash"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    id="imageButton"
+                                    title="Insert Image"
+                                >
+                                    <i class="fa-regular fa-image"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="tool-button"
+                                    id="clearButton"
+                                    title="Clear Formatting"
+                                >
+                                    <i class="fa-solid fa-eraser"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <!-- HIDDEN IMAGE INPUT -->
+
+                        <input
+                            type="file"
+                            id="articleImage"
+                            accept="image/*"
+                            hidden
+                        >
+
+                        <!-- ARTICLE BODY -->
+
+                        <div
+                            id="articleEditor"
+                            class="article-editor"
+                            contenteditable="true"
+                            spellcheck="true"
+                            data-placeholder="Start writing your article here..."
+                        >
+                        </div>
+
+                        <!-- EDITOR FOOTER -->
+
+                        <div class="editor-footer">
+
+                            <span>
+                                <span id="wordCount">0</span> words
+                            </span>
+
+                            <span>
+                                <span id="characterCount">0</span> characters
+                            </span>
+
+                            <span class="saved-indicator" id="saveIndicator">
+                                All changes saved
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ARTICLE SETTINGS -->
+
+                <aside class="editor-sidebar">
+
+                    <div class="settings-card">
+
+                        <h3>Article Settings</h3>
+
+                        <label>
+                            Category
+                        </label>
+
+                        <select id="category">
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option>Politics</option>
+                            <option>Business</option>
+                            <option>News</option>
+                            <option>Entertainment</option>
+                            <option>Sports</option>
+                            <option>Technology</option>
+                            <option>Health</option>
+                            <option>Education</option>
+
+                        </select>
+
+                        <label>
+                            Subcategory
+                        </label>
+
+                        <select>
+
+                            <option>Select subcategory</option>
+                            <option>National</option>
+                            <option>International</option>
+                            <option>Economy</option>
+                            <option>Government</option>
+
+                        </select>
+
+                        <label>
+                            Article Tags
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="e.g. Nigeria, Politics"
+                        >
+
+                        <label>
+                            Source
+                        </label>
+
+                        <input
+                            type="text"
+                            id="source"
+                            placeholder="e.g. Channels TV"
+                        >
+
+                        <label>
+                            Author
+                        </label>
+
+                        <input
+                            type="text"
+                            value="Ayomide"
+                        >
+
+                    </div>
+
+                    <div class="settings-card">
+
+                        <h3>Publishing</h3>
+
+                        <div class="publishing-option">
+
+                            <span>
+                                <i class="fa-solid fa-circle-info"></i>
+                                Review required
+                            </span>
+
+                            <label class="switch">
+
+                                <input
+                                    type="checkbox"
+                                    checked
+                                >
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+                        <p class="help-text">
+                            Your article will be reviewed by an editor
+                            before it becomes publicly available.
+                        </p>
+
+                    </div>
+
+                    <div class="tips-card">
+
+                        <div class="tips-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <div>
+                            <strong>Writing Tip</strong>
+
+                            <p>
+                                Keep your headline clear and informative.
+                                Use short paragraphs to make your story
+                                easier to read.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- ================= DRAFTS ================= -->
+
+        <section class="page" id="drafts">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">WORK IN PROGRESS</p>
+                    <h1>Drafts</h1>
+                    <p>Continue working on your unfinished articles.</p>
+                </div>
+
+            </div>
+
+            <div class="empty-state">
+
+                <i class="fa-regular fa-file-lines"></i>
+
+                <h2>Your drafts will appear here</h2>
+
+                <p>
+                    Start writing an article and save it as a draft.
+                </p>
+
+                <button
+                    class="primary-button"
+                    data-page="create"
+                >
+                    Write Article
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ================= PUBLISHED ================= -->
+
+        <section class="page" id="published">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">LIVE CONTENT</p>
+                    <h1>Published Articles</h1>
+                    <p>Stories that are currently live.</p>
+                </div>
+
+            </div>
+
+            <div class="content-card">
+
+                <div class="published-item">
+
+                    <div class="published-image">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+
+                    <div class="published-details">
+
+                        <h3>
+                            Nigeria's Economy and the Road Ahead
+                        </h3>
+
+                        <p>
+                            Published August 18, 2026
+                        </p>
+
+                        <div class="article-metrics">
+
+                            <span>
+                                <i class="fa-solid fa-eye"></i>
+                                12,430 views
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                1,204 likes
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- ================= PREVIEW MODAL ================= -->
+
+<div class="modal" id="previewModal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2>Article Preview</h2>
+
+            <button id="closePreview">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <article class="preview-article">
+
+            <div
+                id="previewCategory"
+                class="preview-category"
+            >
+                NEWS
+            </div>
+
+            <h1 id="previewTitle">
+                Your article headline will appear here
+            </h1>
+
+            <div class="preview-meta">
+                By Ayomide • August 18, 2026
+            </div>
+
+            <img
+                id="previewCover"
+                class="preview-cover"
+                alt=""
+            >
+
+            <div id="previewBody" class="preview-body">
+                Your article content will appear here.
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+<!-- ================= LINK MODAL ================= -->
+
+<div class="modal" id="linkModal">
+
+    <div class="small-modal-content">
+
+        <div class="modal-header">
+
+            <h2>Insert Link</h2>
+
+            <button id="closeLink">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <label>
+            Link URL
+        </label>
+
+        <input
+            type="url"
+            id="linkUrl"
+            placeholder="https://example.com"
+        >
+
+        <div class="modal-actions">
+
+            <button
+                class="secondary-button"
+                id="cancelLink"
+            >
+                Cancel
+            </button>
+
+            <button
+                class="primary-button"
+                id="insertLink"
+            >
+                Insert Link
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast" class="toast">
+    <i class="fa-solid fa-check"></i>
+    <span id="toastMessage">Saved successfully</span>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
